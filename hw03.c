@@ -17,17 +17,18 @@ void print_student(Mode m, Student s) {
     case NAME_ONLY:
       printf("%s %s\n", s.first_name, s.last_name);
       break;
-	// TODO: handle other cases
+  // TODO: handle other cases
   }
 }
 
 /*
-	argv[1] will be the Mode integer
-	argv[2...] will be student info in the form [first_name, last_name, major, year]
-	the fields are all strings (char[])
-	except year is a number (int)
+argv[1] will be the Mode integer.
+argv[2]-argv[5] will be student info in the form [first_name, last_name, major, year].
+argv[6]-argv[9], if present will be student info for a second student in the same form, and so on.
+You will need to check argc to determine the number of students passed at runtime.
+The fields are all strings (char[]), except year is a number (int)
 */
-int main() {
+int main(int argc, char **argv) {
   // TODO: parse argv to populate student structs 
   // for now, here's two hardcoded students:
   Student s1, s2;
