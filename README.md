@@ -1,4 +1,4 @@
-# ece160-hw03
+# cs102-hw02
 For this assignment, you will need to fork this respotiory (see the upper-right corner of this page).
 Once you have your own fork, clone it like you would with any other repository. Edit 
 `hw03.c` to print the correct output, and then commit and push your changes to your fork.
