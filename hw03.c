@@ -56,12 +56,12 @@ int main(int argc, char **argv) {
   for (int i=2; i<argc; i+=4)
 
 {
-  Student s1;
-  s1.first_name = argv[i];
-  s1.last_name = argv[i+1];
-  s1.major = argv[i+2];
-  s1.year = atoi(argv[i+3]);
-  print_student(Mode, s1);
+  Student s;
+  s.first_name = argv[i];
+  s.last_name = argv[i+1];
+  s.major = argv[i+2];
+  s.year = atoi(argv[i+3]);
+  print_student(Mode, s);
 
   }
   return 0;
